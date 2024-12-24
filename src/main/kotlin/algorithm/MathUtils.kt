@@ -1,6 +1,6 @@
 package com.inspire12.algorithm
 
-class Math {
+class MathUtils {
     fun isPrime(n: Int): Boolean {
         if (n < 2) return false
         for (i in 2..Math.sqrt(n.toDouble()).toInt()) {
