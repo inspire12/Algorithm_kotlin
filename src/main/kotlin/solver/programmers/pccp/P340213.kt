@@ -1,6 +1,10 @@
-package com.inspire12.solver.programmers.pccp1
+package solver.programmers.pccp
 
-class Solution {
+/**
+ * PCCP 1번 동영상 재생기
+ * https://school.programmers.co.kr/learn/courses/30/lessons/340213
+ */
+class P340213 {
     private fun to_postition(pos: String): Int {
         var split = pos.split(':')
         var r = split[0].toInt() * 60

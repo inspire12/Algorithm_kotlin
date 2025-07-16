@@ -1,6 +1,5 @@
-package solver.programmers.pccp1
+package solver.programmers.pccp
 
-import com.inspire12.solver.programmers.pccp1.Solution
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
@@ -19,7 +18,7 @@ class SolutionTest {
         val commands = arrayOf("next", "prev")
         val result1 = "13:00"
 
-        val service = Solution()
+        val service = P340213()
 
         // Act
         val result = service.solution(videoLen, pos, opStart, opEnd, commands)
@@ -40,7 +39,7 @@ class SolutionTest {
         val commands = arrayOf("prev", "next", "next")
         val result2 = "06:55"
 
-        val service = Solution()
+        val service = P340213()
 
         // Act
         val result = service.solution(videoLen, pos, opStart, opEnd, commands)
@@ -61,7 +60,7 @@ class SolutionTest {
         val commands = arrayOf("next")
         val result3 = "04:17"
 
-        val service = Solution()
+        val service = P340213()
 
         // Act
         val result = service.solution(videoLen, pos, opStart, opEnd, commands)
